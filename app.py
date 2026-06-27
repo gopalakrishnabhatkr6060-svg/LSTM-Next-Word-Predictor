@@ -23,9 +23,9 @@ st.write("Enter a sentence and let the LSTM model predict the next words.")
 @st.cache_resource
 def load_lstm_model():
     try:
-        return load_model("model.h5")
+        return load_model("lstm_model.h5")
     except Exception as e:
-        st.error(f"Failed to load model.h5: {e}")
+        st.error(f"Failed to load lstm_model.h5: {e}")
         st.stop()
 
 @st.cache_resource
